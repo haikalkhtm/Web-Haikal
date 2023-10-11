@@ -1,0 +1,249 @@
+/* Reset CSS */
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Logo Styles */
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: courier;
+  color: chocolate;
+}
+
+/* Gaya untuk bagian Home yang di-target */
+#home:target {
+  background-color: #000000; /* Ganti warna latar belakang sesuai keinginan Anda */
+  padding: 20px; /* Tambahkan jarak dengan padding */
+  transition: background-color 0.3s ease-in-out; /* Animasi perubahan latar belakang */
+}
+
+/* Gaya untuk bagian About yang di-target */
+#about:target {
+  background-color: #000000; /* Ganti warna latar belakang sesuai keinginan Anda */
+  padding: 20px; /* Tambahkan jarak dengan padding */
+  transition: background-color 0.3s ease-in-out; /* Animasi perubahan latar belakang */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #c9ccd5;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: chocolate;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+}
+
+/* Description Styles */
+.deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #364f6b;
+}
+
+/* Heading Styles */
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  text-align: center;
+}
+
+/* Bootstrap Button Styles */
+.btn {
+  margin-top: 20px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none; /* Menghilangkan underline pada tombol */
+}
+
+.btn-primary {
+  background: chocolate;
+  border-radius: 20px;
+  color: #ffffff;
+  display: inline-block; /* Agar tombol tetap dalam satu baris */
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #fec260;
+  text-decoration: none;
+}
+
+/* Paragraph Styles */
+p {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-family: "comic sans ms";
+  color: #364f6b;
+}
+
+/* Centered Content Styles */
+.text-center {
+  text-align: center;
+}
+
+/* Tutor List Styles */
+.tutor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kartu-tutor {
+  width: 20%;
+  text-align: center;
+}
+
+.kartu-tutor img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.kartu-tutor p {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 25px;
+  color: #364f6b;
+}
+
+/* Gallery List Styles */
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kartu-gallery {
+  width: 20%;
+  text-align: center;
+}
+
+.kartu-gallery img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Contact Section Styles */
+#contact {
+  background: #dedede;
+  padding: 50px 0;
+}
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: #364f6b;
+  font-family: "comic sans ms";
+}
+
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+}
+
+/* Copyright Styles */
+#copyright {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .logo a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .menu {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  /* Mobile Navigation Button Styles */
+  .tombol-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+  }
+
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 5px;
+  }
+
+  nav .menu.active {
+    display: flex;
+  }
+
+  section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .kartu-tutor,
+  .kartu-gallery {
+    width: 50%;
+  }
+}
